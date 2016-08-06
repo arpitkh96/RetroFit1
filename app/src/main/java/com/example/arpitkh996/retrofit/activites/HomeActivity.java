@@ -3,6 +3,7 @@ package com.example.arpitkh996.retrofit.activites;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -15,6 +16,7 @@ import com.example.arpitkh996.retrofit.model.ApiError;
 import com.example.arpitkh996.retrofit.model.Center;
 import com.example.arpitkh996.retrofit.model.Example;
 import com.example.arpitkh996.retrofit.utils.ErrorHandler;
+import com.google.gson.Gson;
 
 import java.util.HashMap;
 import java.util.List;
@@ -39,6 +41,9 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
                 this, drawer, toolbar,R.string.app_name,R.string.app_name);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
+        recyclerView=(RecyclerView)findViewById(R.id.str);
+        recyclerView.setLayoutManager(linearLayoutManager);
         callApi();
     }
 
@@ -49,7 +54,7 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
             if(example!=null){
                 List<Center> centers=example.getData().getCenters();
                 mainRecyclerAdapter=new MainRecyclerAdapter(centers,HomeActivity.this);
-
+                recyclerView.setAdapter(mainRecyclerAdapter);
             }
             // use response data and do some fancy stuff :)
         } else {
@@ -85,7 +90,9 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
         map.put("os_version","Android SDK, 22 (5.1)");
         map.put("latlng","28.7108748,77.1149768");
         map.put("registration_id","5605038b83215c87136a7895791cc56d3c74e854hytJqheH9911502888");
-        Call<Example> call = getCenters.loadCenters(map);
+        Gson gson = new Gson();
+        String json = gson.toJson(map);
+        Call<Example> call = getCenters.loadCenters(json);
         call.enqueue(this);
         showDialog();
     }
