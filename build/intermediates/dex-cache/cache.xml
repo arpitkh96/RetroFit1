@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_75f428f972e76c02d5904bb58a088a74fa853c49\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\sdk\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_b3d655bd40c00074459db60be8053ffad051df3a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_9bf554fe20d0db2f0062b5b86cdb96f6089eb25a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_6243c324c06a14fe40fe544a386dd0684e31efd9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_26068d3d4e88f060cfd4448a8b8d11367aaa9555\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="fee1b931b4f7f2f2e7a9a3d3ff1f213028b89faf">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_242d2df38eea61bf03b8e56c28b77fead48c50f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_65771be578097dfe042a2c1efbcdd3c221aa0fb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_27c0b653ea2f17adcecf6a486071f5a183071475\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_57c6dddd46fe8f52bb94b96487e9be467d914a82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_3be81c2e9aa3bdccb62d656e25812a6917058b47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_fa37636b583e6f29b12535b88d2f036e987be180\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="b13523a0820abc5a7521b46137ab519832c252bd">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_70be5a6c76c5e60544f24a1cfdf3404f270cb79d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_e77d6969c658c4dd3544df8639eb7e4902718bd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_2ecc395b0959a0329ecadccb21f916767bbe1aef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.4.0_cadd307a13d69019a50e1e592f23d9e5efe7718e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_4d8a12626651aab4f43480d191c05bce138c83b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha4\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="affe29a90a2a709bfd2b8d6411aa99c05a2be96f">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-alpha4_4968fc59cc8625d1732a5d36840c8fd6e4032acf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\sdk\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha4\constraint-layout-solver-1.0.0-alpha4.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="a882fef6a6b9e3efbb0b6b001895a5fc7c35b391">
+        <dex dex="C:\Users\arpitkh996\Projects\RetroFit\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha4_eef71969009d64e314f35457da0e3d50e557c0cf\classes.dex" />
+    </item>
+
+</items>
