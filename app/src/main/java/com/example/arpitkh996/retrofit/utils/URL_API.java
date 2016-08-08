@@ -5,5 +5,5 @@ package com.example.arpitkh996.retrofit.utils;
  */
 
 public class URL_API {
-  public static   final String BASE_URL = "http://dev.fitnapp.in/api/v1/";
+  public static   final String BASE_URL = "http://188.166.248.104:8080/globalfoodie/api/";
 }

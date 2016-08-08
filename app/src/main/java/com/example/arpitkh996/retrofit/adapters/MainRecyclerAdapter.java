@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.arpitkh996.retrofit.R;
-import com.example.arpitkh996.retrofit.model.Center;
+
+import com.simpleResponse.arpitkh996.retrofit.R;
 
 import java.util.List;
 
@@ -17,10 +17,10 @@ import java.util.List;
  */
 
 public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapter.LocalViewHolder> {
-    List<Center> arrayList;
+    List<String> arrayList;
     Context c;
 
-    public MainRecyclerAdapter(List<Center> arrayList, Context c) {
+    public MainRecyclerAdapter(List<String> arrayList, Context c) {
         this.arrayList = arrayList;
         this.c = c;
 
@@ -38,7 +38,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
     @Override
     public void onBindViewHolder(LocalViewHolder holder, final int position) {
 
-        holder.title.setText(arrayList.get(position).getCenterName());
+        holder.title.setText(arrayList.get(position));
     }
 
     @Override

@@ -9,23 +9,21 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.example.arpitkh996.retrofit.B2C;
-import com.example.arpitkh996.retrofit.R;
 import com.example.arpitkh996.retrofit.adapters.MainRecyclerAdapter;
 import com.example.arpitkh996.retrofit.interfaces.retrofit.GetCenters;
 import com.example.arpitkh996.retrofit.model.ApiError;
-import com.example.arpitkh996.retrofit.model.Center;
-import com.example.arpitkh996.retrofit.model.Example;
+import com.example.arpitkh996.retrofit.model.SimpleResponse;
+import com.example.arpitkh996.retrofit.model.T3VO;
 import com.example.arpitkh996.retrofit.utils.ErrorHandler;
-import com.google.gson.Gson;
+import com.simpleResponse.arpitkh996.retrofit.R;
 
 import java.util.HashMap;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class HomeActivity extends BaseActivity implements Callback<Example> {
+public class HomeActivity extends BaseActivity implements Callback<T3VO> {
 
     Toolbar toolbar;
     MainRecyclerAdapter mainRecyclerAdapter;
@@ -48,14 +46,9 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
     }
 
     @Override
-    public void onResponse(Call<Example> call, Response<Example> response) {
+    public void onResponse(Call<T3VO> call, Response<T3VO> response) {
         if (response.isSuccessful()) {
-            Example example = response.body();
-            if(example!=null){
-                List<Center> centers=example.getData().getCenters();
-                mainRecyclerAdapter=new MainRecyclerAdapter(centers,HomeActivity.this);
-                recyclerView.setAdapter(mainRecyclerAdapter);
-            }
+            T3VO simpleResponse =response.body();
             // use response data and do some fancy stuff :)
         } else {
             // parse the response body …
@@ -70,29 +63,17 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
     }
 
     @Override
-    public void onFailure(Call<Example> call, Throwable t) {
+    public void onFailure(Call<T3VO> call, Throwable t) {
         hideDialog();
     }
     void callApi(){
         GetCenters getCenters = B2C.getRetrofitInstance().create(GetCenters.class);
         HashMap<String,String> map=new HashMap<String,String>();
-        map.put("start","0");
-        map.put("city_id","1");
-        map.put("device_width","1080");
-        map.put("date","21/04/2016");
-        map.put("range","0");
-        map.put("cat_id","1");
-        map.put("platform","android");
-        map.put("app_version","12");
-        map.put("category_alias","gym");
-        map.put("device_id","fit_4536d8a07729c382");
-        map.put("device_model","BLACK-1X");
-        map.put("os_version","Android SDK, 22 (5.1)");
-        map.put("latlng","28.7108748,77.1149768");
-        map.put("registration_id","5605038b83215c87136a7895791cc56d3c74e854hytJqheH9911502888");
-        Gson gson = new Gson();
-        String json = gson.toJson(map);
-        Call<Example> call = getCenters.loadCenters(map);
+        map.put("deviceid","88a55f98eb2b90b1");
+        map.put("rid","6");
+        map.put("userid","cafman5388");
+        map.put("av","1.0");
+        Call<T3VO> call = getCenters.loadCenters(map);
         call.enqueue(this);
         showDialog();
     }
