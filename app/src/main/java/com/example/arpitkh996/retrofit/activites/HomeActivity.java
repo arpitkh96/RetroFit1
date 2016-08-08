@@ -9,14 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.example.arpitkh996.retrofit.B2C;
+import com.example.arpitkh996.retrofit.R;
 import com.example.arpitkh996.retrofit.adapters.MainRecyclerAdapter;
 import com.example.arpitkh996.retrofit.interfaces.retrofit.GetCenters;
 import com.example.arpitkh996.retrofit.model.ApiError;
 import com.example.arpitkh996.retrofit.model.SimpleResponse;
 import com.example.arpitkh996.retrofit.model.T3VO;
 import com.example.arpitkh996.retrofit.utils.ErrorHandler;
-import com.simpleResponse.arpitkh996.retrofit.R;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import retrofit2.Call;
@@ -49,6 +50,10 @@ public class HomeActivity extends BaseActivity implements Callback<T3VO> {
     public void onResponse(Call<T3VO> call, Response<T3VO> response) {
         if (response.isSuccessful()) {
             T3VO simpleResponse =response.body();
+            ArrayList<String> arrayList=new ArrayList<>();
+            arrayList.add("asdknad");
+            MainRecyclerAdapter mainRecyclerAdapter=new MainRecyclerAdapter(arrayList,this);
+            recyclerView.setAdapter(mainRecyclerAdapter);
             // use response data and do some fancy stuff :)
         } else {
             // parse the response body …

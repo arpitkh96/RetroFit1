@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.simpleResponse.arpitkh996.retrofit.R;
+import com.example.arpitkh996.retrofit.R;
 
 import java.util.List;
 
