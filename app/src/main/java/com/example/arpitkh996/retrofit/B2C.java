@@ -5,6 +5,8 @@ import android.app.Application;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -16,22 +18,21 @@ import static com.example.arpitkh996.retrofit.utils.URL_API.BASE_URL;
 
 public class B2C extends Application {
     static Retrofit retrofit;
-    static Gson gson;
+    static OkHttpClient client;
     @Override
     public void onCreate() {
         super.onCreate();
-        gson=new GsonBuilder().setLenient().create();
-         retrofit= new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
+        getRetrofitInstance();
     }
     public  static Retrofit getRetrofitInstance(){
         if(retrofit==null){
-            gson=new GsonBuilder().setLenient().create();
+            HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+            interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+            client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
             retrofit= new Retrofit.Builder()
                     .baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create(gson))
+                    .client(client)
+                    .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
         return retrofit;

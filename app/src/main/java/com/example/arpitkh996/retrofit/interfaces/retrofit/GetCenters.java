@@ -4,6 +4,7 @@ import com.example.arpitkh996.retrofit.model.Example;
 
 
 import java.util.HashMap;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -16,7 +17,7 @@ import retrofit2.http.POST;
  */
 
 public interface GetCenters {
-
+    @FormUrlEncoded
     @POST("customer/getCenters")
-    Call<Example> loadCenters(@Body String data);
+    Call<Example> loadCenters(@FieldMap HashMap<String,String> data);
 }

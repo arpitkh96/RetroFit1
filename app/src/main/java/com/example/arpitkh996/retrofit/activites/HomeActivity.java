@@ -92,7 +92,7 @@ public class HomeActivity extends BaseActivity implements Callback<Example> {
         map.put("registration_id","5605038b83215c87136a7895791cc56d3c74e854hytJqheH9911502888");
         Gson gson = new Gson();
         String json = gson.toJson(map);
-        Call<Example> call = getCenters.loadCenters(json);
+        Call<Example> call = getCenters.loadCenters(map);
         call.enqueue(this);
         showDialog();
     }
